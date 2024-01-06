@@ -1,0 +1,12 @@
+
+1. Create a schema for Users
+
+
+1. Route for users
+    a. CRUD for posts
+    b. Follow/Unfollow
+    c. Like/Dislike
+    d. UserInfo update/Account delete
+
+2. Route for authentication
+    a. Login/Register

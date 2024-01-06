@@ -1,0 +1,122 @@
+nav{
+    z-index:2;
+    position:fixed;
+    top:0;
+    display:flex;
+    justify-content: flex-end;
+    gap:1rem;
+    align-items: center;
+    width: 100vw;
+    height:4rem;
+    padding:0 2rem 0 2rem;
+    background-color:transparent;
+}
+.nav_left h2{   
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav_search{
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+input.search_large{
+    transition:width 2s;
+    width:400px;
+    height:3rem;
+    border-style:solid;
+    border-width:1px;
+    border-color:silver;
+    border-radius:20px;
+    padding:0 2rem;
+    background-color:#eeeeee38;
+    outline:none;
+    color:gray;
+    &:focus{
+        border-color:gray;
+    }
+}
+input.search_small{
+    transition:width 2s;
+    display: none;
+    width:400px;
+    padding:0 2rem;
+    border-style:solid;
+    border-width:1px;
+    border-color:silver;
+    border-radius:20px;
+    color:gray;
+    outline:none;
+    padding:0 1rem;
+    background-color:#eeeeee38;
+    &:focus{
+        border-color:gray;
+    }
+}
+div.magnifying-glass{
+    position:absolute;
+    right:15px;
+    z-index:1;
+    display:block;
+    & .search_icon{
+        font-size:1.6rem;
+        color:#282828;
+    }
+}
+.nav_bars{
+    display:none;
+    & i{
+        font-size:1.5rem;
+    }
+}
+.nav_right{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    & div{
+        display:flex;
+        align-items:center;
+        border:1px solid black;
+        & .chat_badge{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:12px;
+            height:20px;
+            width:20px;
+            border-radius:50%;
+            background-color:cornflowerblue;
+            color:white;
+        }
+    }
+    & div:nth-child(1){
+        height:2rem;
+        border-radius:20px;
+        border:none;
+        padding:.2rem 0 .2rem 0;
+    }
+    & div:nth-child(2){
+        height:2rem;
+        border-radius:20px;
+        padding:.2rem 1rem .2rem 1rem;
+        cursor:pointer;
+        background-color:#282828;
+        border-color:#282828;
+        color:white;
+        transition:background .1s;
+        &:hover{
+            background-color:#00D707;
+            border-color:#00D707;
+            color:white;
+        }
+    }
+}
+
+.nav_profile{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-image:url(../../../public/images/profile_pictures/4.jpg);
+    background-size:cover;
+    background-position: center;
+    cursor:pointer;
+}

@@ -1,0 +1,5 @@
+websockets are a communication protocol that enables two way(bi-directional) communication between applications.
+websockets are great choice when we want two way communication.
+websockets are well suited when you need to puch freash data as soon as it is available on the server.
+unlike HTTP that are short lived , websockets enables the connection in realtime as long-lived for real time communication.
+it maintains the connection ,, until it closed from the either side.as they maintains long-lived connections as not causes any memory problem. 

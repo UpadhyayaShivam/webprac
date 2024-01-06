@@ -1,0 +1,14 @@
+.layout{
+    position: relative;
+    width:100%;
+}
+.background{
+    position:fixed;
+    height:100vh;
+    width:100%;
+    background-image:url("../public/images/background/1.jpeg.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
