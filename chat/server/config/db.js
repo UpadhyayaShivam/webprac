@@ -6,7 +6,7 @@ require('colors');
 
 dotenv.config();
 
-const url = process.env.Mongo_URL || 'mongodb+srv://shivam1723be20:mernchat@mernchat.3fkpuhs.mongodb.net/?retryWrites=true&w=majority';
+const url = process.env.Mongo_URL || '';
 
 mongoose.connect(url , {
     useNewUrlParser : true,
